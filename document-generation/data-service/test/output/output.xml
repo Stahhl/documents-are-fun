@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-16"?>
+<CaseBackbone xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CaseId>A1234</CaseId>
+  <CaseType>PAYM</CaseType>
+  <CaseDescription>Payment</CaseDescription>
+  <CaseHandlers>
+    <HandlerId>BOHAND</HandlerId>
+    <FirstName>Bob</FirstName>
+    <LastName>Handlerson</LastName>
+    <Phone>555 011 02</Phone>
+    <Email>bob.test@company.com</Email>
+  </CaseHandlers>
+  <CaseUsers>
+    <UserName>leetKid69</UserName>
+    <FirstName>Timmy</FirstName>
+    <LastName>McTest</LastName>
+    <Phone />
+    <Email>leetkid69@badass.com</Email>
+  </CaseUsers>
+  <CaseUsers>
+    <UserName>HMTQ</UserName>
+    <FirstName>Elizabeth II</FirstName>
+    <LastName>Windsor</LastName>
+    <Phone>1</Phone>
+    <Email>queen@gov.co.uk</Email>
+  </CaseUsers>
+</CaseBackbone>
