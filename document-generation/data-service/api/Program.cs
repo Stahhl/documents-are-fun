@@ -2,6 +2,9 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddSingleton<DataAccess>(new DataAccess());
+builder.Services.AddSingleton<XmlHelper>(new XmlHelper());
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -14,6 +17,6 @@ app.UseDeveloperExceptionPage();
 app.UseSwagger();
 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "data_service v1"));
 
-Helper.MapEndpoints(app);
+ApiHelper.MapEndpoints(app);
 
 app.Run();
