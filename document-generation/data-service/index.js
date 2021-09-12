@@ -42,5 +42,5 @@ app.get("/case", (req, res) => {
 
 app.listen(
     PORT,
-    () => console.log(`app is alive on http://localhost:${PORT}`)
+    () => console.log(`app is alive on: http://localhost:${PORT}`)
 );
