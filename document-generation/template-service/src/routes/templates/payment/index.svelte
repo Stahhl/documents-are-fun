@@ -1,21 +1,37 @@
 <script>
 	import store from "./store";
 	import SplitPane from "../../../components/splitPane.svelte";
+	import QuestionBlock from "../../../components/questionBlock.svelte";
 </script>
 
-<h1>Payment form</h1>
-
-<!-- <form class="content">
-    <input type=checkbox bind:checked={$store.q1.check}>
-
-    {#if $store.q1.check}
-    <div>
-        <textarea bind:value={$store.q1.text} />
-    </div>
-    {/if}
-</form> -->
+<h1 class="text-2xl">Payment form</h1>
 
 <SplitPane>
-	<left slot="left"><div class="box">LEFT</div></left>
-	<right slot="right">RIGHT</right>
+	<div slot="left">
+        <QuestionBlock>
+            <form class="content">
+                <input type="checkbox" id="q11" bind:checked={$store.q1.check} />
+                <label for="q11">Include a text field.</label>
+    
+                {#if $store.q1.check}
+                    <div>
+                        <textarea class="resize-y w-full" rows="4" bind:value={$store.q1.text} />
+                    </div>
+                {/if}
+            </form>
+        </QuestionBlock>
+        <QuestionBlock>
+            <form class="content">
+                <input type="checkbox" id="q21" bind:checked={$store.q2.check} />
+                <label for="q21">Include a text field.</label>
+    
+                {#if $store.q2.check}
+                    <div>
+                        <textarea class="resize-y w-full" rows="4" bind:value={$store.q2.text} />
+                    </div>
+                {/if}
+            </form>
+        </QuestionBlock>
+	</div>
+	<div slot="right">RIGHT</div>
 </SplitPane>

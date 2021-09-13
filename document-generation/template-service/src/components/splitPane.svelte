@@ -21,7 +21,7 @@
         width: 4px;
         margin-left: -2px;
         z-index: 1;
-        background-color: #aaa;
+        background-color: blue;
         background-repeat: no-repeat;
         background-position: center;
     }

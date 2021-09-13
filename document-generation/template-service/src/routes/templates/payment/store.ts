@@ -4,6 +4,10 @@ const store = writable({
 	q1: {
 		check: false,
 		text: ""
+	},
+	q2: {
+		check: false,
+		text: ""
 	}
 });
 
