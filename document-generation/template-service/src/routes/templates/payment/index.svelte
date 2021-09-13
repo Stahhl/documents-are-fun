@@ -16,6 +16,6 @@
 </form> -->
 
 <SplitPane>
-	<left slot="left">LEFT</left>
+	<left slot="left"><div class="box">LEFT</div></left>
 	<right slot="right">RIGHT</right>
 </SplitPane>
