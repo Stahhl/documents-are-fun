@@ -21,14 +21,35 @@ app.get("/template/:id", (req, res) =>
         {
           name: "Product 1",
           cost: 100,
+          description: `Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Rem praesentium aliquam vero, tenetur delectus nihil
+                        explicabo. Quo distinctio ab deserunt modi fuga minus veniam? Nam omnis
+                        beatae vel voluptatem fuga.`
         } as Product,
         {
           name: "Product 2",
           cost: 10,
+          description: `Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Rem praesentium aliquam vero, tenetur delectus nihil
+          explicabo. Quo distinctio ab deserunt modi fuga minus veniam? Nam omnis
+          beatae vel voluptatem fuga. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Incidunt magni ut nisi! Nulla dolorum placeat alias ex
+          sed fuga quae sapiente quasi hic, tempora quaerat vitae soluta labore
+          vel aspernatur? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Fugiat voluptas perferendis delectus quo. Eos ullam voluptatibus rerum
+          voluptas beatae debitis assumenda, explicabo quos earum vero est esse,
+          iusto corporis at!`
         } as Product,
         {
           name: "Product 3",
           cost: 1000,
+          description: `Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Rem praesentium aliquam vero, tenetur delectus nihil
+          explicabo. Quo distinctio ab deserunt modi fuga minus veniam? Nam omnis
+          beatae vel voluptatem fuga. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Incidunt magni ut nisi! Nulla dolorum placeat alias ex
+          sed fuga quae sapiente quasi hic, tempora quaerat vitae soluta labore
+          vel aspernatur?`
         } as Product,
       ] as Product[],
     } as OrderData,
