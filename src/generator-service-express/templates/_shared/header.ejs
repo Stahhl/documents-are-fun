@@ -1,0 +1,23 @@
+<style>
+  .left {
+    /* background-color: lightgreen; */
+    flex-grow: 1;
+  }
+  .right {
+    /* background-color: red; */
+    font-style: italic;
+    width: 200px;
+  }
+</style>
+
+<div style="display: flex">
+  <div class="left">
+    <h1>Order details: <%= order.orderId ?? "ERROR" %></h1>
+  </div>
+  <div class="right">
+    <%= order.customer.firstName ?? "ERROR" %> <%= order.customer.lastName ?? "ERROR" %> </br>
+    <%= order.customer.address ?? "ERROR" %> </br>
+    <%= order.customer.zip ?? "ERROR" %> <%= order.customer.city ?? "ERROR" %> </br>
+    <%= order.customer.country ?? "ERROR" %> </br>
+  </div>
+</div>

@@ -4,4 +4,8 @@ export interface Person{
     age: number;
     email: string;
     phone: string;
+    address: string;
+    city: string;
+    zip: string;
+    country: string;
 }

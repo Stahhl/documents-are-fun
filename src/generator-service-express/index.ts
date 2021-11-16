@@ -17,6 +17,13 @@ app.get("/template/:id", (req, res) =>
       customer: {
         firstName: "John",
         lastName: "Doe",
+        age: 25,
+        email: "john.doe@email.com",
+        phone: "12345678",
+        address: "123 Main St",
+        city: "Anytown",
+        zip: "12345",
+        country: "USA"
       } as Person,
       products: [
         {
