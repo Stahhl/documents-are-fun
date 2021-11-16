@@ -12,6 +12,7 @@ app.set("views", "./templates");
 app.get("/template/:id", (req, res) =>
   res.render(`${req.params.id}/${req.params.id}-wizard`, {
     order: {
+      orderId: "#123",
       customer: {
         firstName: "John",
         lastName: "Doe",
@@ -19,15 +20,15 @@ app.get("/template/:id", (req, res) =>
       products: [
         {
           name: "Product 1",
-          cost: "100",
+          cost: 100,
         } as Product,
         {
           name: "Product 2",
-          cost: "10",
+          cost: 10,
         } as Product,
         {
           name: "Product 3",
-          cost: "1000",
+          cost: 1000,
         } as Product,
       ] as Product[],
     } as OrderData,

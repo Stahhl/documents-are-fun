@@ -58,10 +58,12 @@
       }
     }
   </style>
+  <% var value = 0; %>
   <body>
     <div class="page">
-      <p>
-        Hello <%= order.customer.firstName ?? "ERROR" %> <%=
+      <h1>Order details: <%= order.orderId ?? "ERROR" %></h1>
+      <p style="font-weight: bold">
+        Customer: <%= order.customer.firstName ?? "ERROR" %> <%=
         order.customer.lastName ?? "ERROR" %>
       </p>
       <% order.products.forEach(function(product) { %>
@@ -79,7 +81,8 @@
         voluptas beatae debitis assumenda, explicabo quos earum vero est esse,
         iusto corporis at!
       </p>
-      <% }); %>
+      <% value += product.cost; }); %>
+      <h3>Total: <%= value %>$ </h3>
     </div>
   </body>
 </html>
