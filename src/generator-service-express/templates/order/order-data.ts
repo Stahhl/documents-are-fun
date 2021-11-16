@@ -3,5 +3,5 @@ import { Person } from "../../models/Person";
 
 export interface OrderData{
     customer: Person;
-    //products: Product[];
+    products: Product[];
 }
